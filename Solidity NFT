@@ -1,1 +1,6 @@
 
+import { "ethereum" } from "@thirdweb-dev/chains";
+import { ThirdwebSDK } from "@thirdweb-dev/sdk/evm";
+
+const sdk = new ThirdwebSDK("ethereum");
+const contract = await sdk.getContract("0x0000000000000000000000000000000000000000");
